@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-primary: #ff9f4a;
+  --color-primary-container: #fd8b00;
+  --color-secondary: #ffd709;
+  --color-background: #010e24;
+  --color-surface: #061934;
+  --color-surface-bright: #152c4e;
+  --color-surface-container-low: #02132b;
+  --color-surface-container-high: #0b203d;
+  --color-surface-container-highest: #102645;
+  --color-on-surface: #dbe6ff;
+  --color-on-surface-variant: #9eabc8;
+  --color-outline-variant: #3b4861;
+  --color-on-primary: #532a00;
+  --color-on-secondary: #5b4b00;
+}
+
+@layer utilities {
+  .hazard-stripes {
+    background: repeating-linear-gradient(
+      45deg,
+      #ffd709,
+      #ffd709 10px,
+      #010e24 10px,
+      #010e24 20px
+    );
+  }
+
+  .emergency-pulse {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .emergency-pulse::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 159, 74, 0.3),
+      transparent
+    );
+    animation: pulse-scan 2s infinite linear;
+  }
+
+  @keyframes pulse-scan {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .centralized-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary;
+  }
+}
