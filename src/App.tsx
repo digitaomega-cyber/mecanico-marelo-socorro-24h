@@ -4,7 +4,6 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Phone, 
@@ -36,9 +35,9 @@ const Navbar = () => {
           Mecânico Marelo
         </div>
         <div className="hidden md:flex gap-8">
-          <NavLink className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" to="/servicos">Serviços</NavLink>
-          <NavLink className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" to="/diferenciais">Diferenciais</NavLink>
-          <NavLink className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" to="/avaliacoes">Depoimentos</NavLink>
+          <a className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" href="#servicos">Serviços</a>
+          <a className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" href="#diferenciais">Diferenciais</a>
+          <a className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" href="#avaliacoes">Depoimentos</a>
         </div>
         <div className="flex gap-4">
           <a href="tel:+554288722501" className="hidden sm:flex items-center gap-2 bg-primary-container text-on-primary font-bold px-4 py-2 uppercase font-label hover:brightness-110 active:scale-95 transition-all cursor-pointer">
@@ -373,18 +372,6 @@ const MobileBottomBar = () => {
 };
 
 export default function App() {
-  const { pathname } = window.location;
-
-  useEffect(() => {
-    if (pathname !== '/') {
-      const id = pathname.substring(1);
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [pathname]);
-
   return (
     <div className="min-h-screen">
       <Navbar />
