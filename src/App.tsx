@@ -40,11 +40,11 @@ const Navbar = () => {
           <a className="text-slate-300 font-medium font-label hover:bg-[#152c4e] transition-colors duration-150 px-3 py-1" href="#avaliacoes">Depoimentos</a>
         </div>
         <div className="flex gap-4">
-          <a href="tel:+554288722501" className="hidden sm:flex items-center gap-2 bg-primary-container text-on-primary font-bold px-4 py-2 uppercase font-label hover:brightness-110 active:scale-95 transition-all cursor-pointer">
+          <a href="tel:+554192808495" className="hidden sm:flex items-center gap-2 bg-primary-container text-on-primary font-bold px-4 py-2 uppercase font-label hover:brightness-110 active:scale-95 transition-all cursor-pointer">
             <Phone size={18} fill="currentColor" />
             Ligar Agora
           </a>
-          <a href="https://wa.me/554288722501?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais" className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-4 py-2 uppercase font-label hover:brightness-110 active:scale-95 transition-all cursor-pointer">
+          <a href="https://wa.me/554192808495?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais" className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-4 py-2 uppercase font-label hover:brightness-110 active:scale-95 transition-all cursor-pointer">
             <MessageCircle size={18} fill="currentColor" />
             WhatsApp
           </a>
@@ -86,14 +86,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <a 
               className="group flex items-center justify-between gap-8 bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-5 text-xl font-bold font-label uppercase hover:brightness-110 active:scale-95 transition-all shadow-[0_0_40px_rgba(255,159,74,0.15)]" 
-              href="tel:+554288722501"
+              href="tel:+554192808495"
             >
               Solicitar Mecânico
               <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </a>
             <a 
               className="flex items-center gap-4 bg-transparent border-2 border-outline-variant/30 text-on-surface px-8 py-5 text-xl font-bold font-label uppercase hover:bg-surface-bright transition-all" 
-              href="https://wa.me/554288722501?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais"
+              href="https://wa.me/554192808495?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais"
             >
               <MessageCircle />
               WhatsApp
@@ -293,11 +293,11 @@ const FinalCTA = () => {
           Estamos com equipes prontas em pontos estratégicos de Curitiba para te atender com velocidade máxima.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <a className="bg-secondary text-on-secondary px-10 py-6 text-2xl font-bold font-label uppercase hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-4" href="tel:+554288722501">
+          <a className="bg-secondary text-on-secondary px-10 py-6 text-2xl font-bold font-label uppercase hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-4" href="tel:+554192808495">
             <Phone />
-            Ligar: (42) 8872-2501
+            Ligar: (41) 9280-8495
           </a>
-          <a className="bg-[#25D366] text-white px-10 py-6 text-2xl font-bold font-label uppercase hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-4" href="https://wa.me/554288722501?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais">
+          <a className="bg-[#25D366] text-white px-10 py-6 text-2xl font-bold font-label uppercase hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-4" href="https://wa.me/554192808495?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais">
             <MessageCircle />
             WhatsApp
           </a>
@@ -353,7 +353,7 @@ const FloatingActions = () => {
         <Clock size={18} />
         <div className="text-xs font-bold uppercase font-label">Mecânicos Online em Curitiba</div>
       </div>
-      <a className="w-16 h-16 bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all rounded-none" href="https://wa.me/554288722501?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais">
+      <a className="w-16 h-16 bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all rounded-none" href="https://wa.me/554192808495?text=Olá,%20vim%20do%20Site%20Mecanico%20e%20gostaria%20de%20saber%20mais">
         <MessageCircle size={32} />
       </a>
     </div>
@@ -363,7 +363,7 @@ const FloatingActions = () => {
 const MobileBottomBar = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 sm:hidden z-[90] bg-surface-container-highest border-t-2 border-primary">
-      <a className="flex items-center justify-center gap-3 py-4 text-on-surface font-bold uppercase font-label" href="tel:+554288722501">
+      <a className="flex items-center justify-center gap-3 py-4 text-on-surface font-bold uppercase font-label" href="tel:+554192808495">
         <Phone className="text-primary" />
         Ligar para Emergência
       </a>
